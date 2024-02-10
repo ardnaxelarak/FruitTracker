@@ -1,0 +1,534 @@
+light:
+- name: Hyrule Castle
+  x: 0.5
+  y: 0.561
+  type: item
+- name: Castle Tower
+  x: 0.5
+  y: 0.6
+  type: item
+- name: Uncle
+  x: 0.5956
+  y: 0.584
+  type: item
+  memory:
+  - address: 0xF3C6
+    mask: 0x01
+  - address: 0xF0AA
+    mask: 0x10
+- name: Link's House
+  x: 0.5468
+  y: 0.3105
+  type: item
+  memory:
+  - address: 0xF208
+    mask: 0x10
+- name: Lake Hylia Island
+  x: 0.725
+  y: 0.17
+  type: item
+  memory:
+  - address: 0xF2B5
+    mask: 0x40
+- name: Ice Rod Cave
+  x: 0.8822
+  y: 0.23
+  type: item
+  memory:
+  - address: 0xF240
+    mask: 0x10
+- name: Mini Moldorm Cave
+  x: 0.6524
+  y: 0.061
+  type: item
+  memory:
+  - address: 0xF246
+    mask: 0x10
+  - address: 0xF246
+    mask: 0x20
+  - address: 0xF246
+    mask: 0x40
+  - address: 0xF246
+    mask: 0x80
+  - address: 0xF247
+    mask: 0x04
+- name: Dam
+  x: 0.4688
+  y: 0.065
+  type: item
+  memory:
+  - address: 0xF2BB
+    mask: 0x40
+  - address: 0xF216
+    mask: 0x10
+- name: Under Bridge Check
+  x: 0.7109
+  y: 0.3053
+  type: item
+  memory:
+  - address: 0xF3C9
+    mask: 0x01
+- name: Bombos Tablet
+  x: 0.2189
+  y: 0.081
+  type: item
+  memory:
+  - address: 0xF411
+    mask: 0x02
+- name: Aginah
+  x: 0.1994
+  y: 0.175
+  type: item
+  memory:
+  - address: 0xF214
+    mask: 0x10
+- name: Checkerboard Cave
+  x: 0.1759
+  y: 0.223
+  type: item
+  memory:
+  - address: 0xF24D
+    mask: 0x02
+- name: Desert Palace
+  x: 0.0743
+  y: 0.1948
+  type: item
+- name: Desert Ledge
+  x: 0.026
+  y: 0.085
+  type: item
+  memory:
+  - address: 0xF2B0
+    mask: 0x40
+- name: Eastern Palace
+  x: 0.9591
+  y: 0.6113
+  type: item
+- name: Sahasrahla
+  x: 0.8106
+  y: 0.5466
+  type: item
+  memory:
+  - address: 0xF20A
+    mask: 0x10
+  - address: 0xF20A
+    mask: 0x20
+  - address: 0xF20A
+    mask: 0x40
+  - address: 0xF410
+    mask: 0x10
+- name: Waterfall Fairy
+  x: 0.9084
+  y: 0.866
+  type: item
+  memory:
+  - address: 0xF228
+    mask: 0x10
+  - address: 0xF228
+    mask: 0x20
+- name: Zora
+  x: 0.9575
+  y: 0.875
+  type: item
+  memory:
+  - address: 0xF410
+    mask: 0x02
+  - address: 0xF301
+    mask: 0x40
+- name: Potion Shop
+  x: 0.8008
+  y: 0.6655
+  type: item
+  memory:
+  - address: 0xF411
+    mask: 0x20
+- name: King's Tomb
+  x: 0.6015
+  y: 0.703
+  type: item
+  memory:
+  - address: 0xF226
+    mask: 0x10
+- name: Graveyard Ledge
+  x: 0.5703
+  y: 0.726
+  type: item
+  memory:
+  - address: 0xF237
+    mask: 0x02
+- name: Sanctuary Dropdown
+  x: 0.5195
+  y: 0.7073
+  type: item
+- name: North Bonk Rocks
+  x: 0.3908
+  y: 0.707
+  type: item
+  memory:
+  - address: 0xF248
+    mask: 0x10
+- name: Lumberjack Cave
+  x: 0.301
+  y: 0.926
+  type: item
+  memory:
+  - address: 0xF1C5
+    mask: 0x02
+- name: Mushroom Spot
+  x: 0.123
+  y: 0.916
+  type: item
+  memory:
+  - address: 0xF411
+    mask: 0x10
+- name: Forest Hideout Dropdown
+  x: 0.1894
+  y: 0.869
+  type: item
+  memory:
+  - address: 0xF1C3
+    mask: 0x02
+- name: Master Sword Pedestal
+  x: 0.041
+  y: 0.95
+  type: item
+  memory:
+  - address: 0xF300
+    mask: 0x40
+- name: Blind's Hideout
+  x: 0.1137
+  y: 0.58
+  type: item
+  memory:
+  - address: 0xF23A
+    mask: 0x10
+  - address: 0xF23A
+    mask: 0x20
+  - address: 0xF23A
+    mask: 0x40
+  - address: 0xF23A
+    mask: 0x80
+  - address: 0xF23B
+    mask: 0x01
+- name: Kakariko Well Dropdown
+  x: 0.0234
+  y: 0.5744
+  type: item
+  memory:
+  - address: 0xF05E
+    mask: 0x10
+  - address: 0xF05E
+    mask: 0x20
+  - address: 0xF05E
+    mask: 0x40
+  - address: 0xF05E
+    mask: 0x80
+  - address: 0xF05F
+    mask: 0x01
+- name: Bottle Vendor
+  x: 0.095
+  y: 0.5355
+  type: item
+  memory:
+  - address: 0xF3C9
+    mask: 0x02
+- name: Chicken Hut
+  x: 0.0977
+  y: 0.459
+  type: item
+  memory:
+  - address: 0xF210
+    mask: 0x10
+- name: Tavern Back
+  x: 0.1603
+  y: 0.4333
+  type: item
+  memory:
+  - address: 0xF206
+    mask: 0x10
+- name: Sick Kid
+  x: 0.1563
+  y: 0.463
+  type: item
+  memory:
+  - address: 0xF410
+    mask: 0x04
+- name: Powder Bat
+  x: 0.3243
+  y: 0.4376
+  type: item
+  memory:
+  - address: 0xF411
+    mask: 0x80
+- name: Library
+  x: 0.1562
+  y: 0.3415
+  type: item
+  memory:
+  - address: 0xF410
+    mask: 0x80
+- name: Maze Race
+  x: 0.0292
+  y: 0.2985
+  type: item
+  memory:
+  - address: 0xF2A8
+    mask: 0x40
+- name: Cave 45
+  x: 0.2656
+  y: 0.1755
+  type: item
+  memory:
+  - address: 0xF237
+    mask: 0x04
+- name: Flute Spot
+  x: 0.2871
+  y: 0.3381
+  type: item
+  memory:
+  - address: 0xF2AA
+    mask: 0x40
+- name: Ether Tablet
+  x: 0.42
+  y: 0.983
+  type: item
+  memory:
+  - address: 0xF411
+    mask: 0x01
+- name: Tower of Hera
+  x: 0.56
+  y: 0.967
+  type: item
+- name: Spectacle Rock
+  x: 0.4884
+  y: 0.898
+  type: item
+  memory:
+  - address: 0xF283
+    mask: 0x40
+  - address: 0xF1D5
+    mask: 0x04
+- name: Old Man Front
+  x: 0.4492
+  y: 0.766
+  type: item
+  memory:
+  - address: 0xF410
+    mask: 0x01
+- name: Floating Island
+  x: 0.814
+  y: 0.9869
+  type: item
+  memory:
+  - address: 0xF285
+    mask: 0x40
+- name: Mimic Cave
+  x: 0.8438
+  y: 0.919
+  type: item
+  memory:
+  - address: 0xF218
+    mask: 0x10
+- name: Paradox Cave Bottom
+  x: 0.8732
+  y: 0.855
+  type: item
+  memory:
+  - address: 0xF1FE
+    mask: 0x10
+  - address: 0xF1FE
+    mask: 0x20
+- name: Paradox Cave Middle
+  x: 0.8634
+  y: 0.7844
+  type: item
+  memory:
+  - address: 0xF1DE
+    mask: 0x10
+  - address: 0xF1DE
+    mask: 0x20
+  - address: 0xF1DE
+    mask: 0x40
+  - address: 0xF1DE
+    mask: 0x80
+  - address: 0xF1DF
+    mask: 0x01
+- name: Spiral Cave
+  x: 0.7969
+  y: 0.919
+  type: item
+  memory:
+  - address: 0xF1FC
+    mask: 0x10
+dark:
+- name: Palace of Darkness
+  x: 0.959
+  y: 0.6086
+  type: item
+- name: Ice Palace
+  x: 0.7969
+  y: 0.1372
+  type: item
+- name: Ganon's Tower
+  x: 0.5625
+  y: 0.9811
+  type: item
+- name: Spike Cave
+  x: 0.574
+  y: 0.8546
+  type: item
+  memory:
+  - address: 0xF22E
+    mask: 0x10
+- name: Turtle Rock
+  x: 0.9413
+  y: 0.918
+  type: item
+- name: Hookshot Cave Front
+  x: 0.8291
+  y: 0.9421
+  type: item
+  memory:
+  - address: 0xF078
+    mask: 0x10
+  - address: 0xF078
+    mask: 0x20
+  - address: 0xF078
+    mask: 0x40
+  - address: 0xF078
+    mask: 0x80
+- name: Superbunny Bottom
+  x: 0.8395
+  y: 0.855
+  type: item
+  memory:
+  - address: 0xF1F0
+    mask: 0x10
+  - address: 0xF1F0
+    mask: 0x20
+- name: Catfish
+  x: 0.9053
+  y: 0.8283
+  type: item
+  memory:
+  - address: 0xF410
+    mask: 0x20
+- name: Hype Cave
+  x: 0.5977
+  y: 0.221
+  type: item
+  memory:
+  - address: 0xF23C
+    mask: 0x10
+  - address: 0xF23C
+    mask: 0x20
+  - address: 0xF23C
+    mask: 0x40
+  - address: 0xF23C
+    mask: 0x80
+  - address: 0xF23D
+    mask: 0x04
+- name: Swamp Palace
+  x: 0.4687
+  y: 0.064
+  type: item
+- name: Pyramid Fairy
+  x: 0.4687
+  y: 0.5138
+  type: item
+  memory:
+  - address: 0xF22C
+    mask: 0x10
+  - address: 0xF22C
+    mask: 0x20
+- name: Pyramid Ledge
+  x: 0.58
+  y: 0.5527
+  type: item
+  memory:
+  - address: 0xF2DB
+    mask: 0x40
+- name: Bumper Ledge
+  x: 0.3234
+  y: 0.8419
+  type: item
+  memory:
+  - address: 0xF2CA
+    mask: 0x40
+- name: Thieves Town
+  x: 0.125
+  y: 0.5143
+  type: item
+- name: Chest Game
+  x: 0.0507
+  y: 0.5328
+  type: item
+  memory:
+  - address: 0xF20D
+    mask: 0x04
+- name: C-Shaped House
+  x: 0.207
+  y: 0.5174
+  type: item
+  memory:
+  - address: 0xF238
+    mask: 0x10
+- name: Brewery
+  x: 0.1095
+  y: 0.4163
+  type: item
+  memory:
+  - address: 0xF20C
+    mask: 0x10
+- name: Purple Chest
+  x: 0.3047
+  y: 0.4768
+  type: item
+  memory:
+  - address: 0xF3C9
+    mask: 0x10
+- name: Hammer Pegs
+  x: 0.3164
+  y: 0.3947
+  type: item
+  memory:
+  - address: 0xF24F
+    mask: 0x04
+- name: Stumpy
+  x: 0.3085
+  y: 0.3173
+  type: item
+  memory:
+  - address: 0xF410
+    mask: 0x08
+- name: Frog
+  x: 0.1502
+  y: 0.3379
+  type: item
+  memory:
+  - address: 0xF411
+    mask: 0x04
+- name: Digging Game
+  x: 0.0492
+  y: 0.3227
+  type: item
+  memory:
+  - address: 0xF2E8
+    mask: 0x40
+- name: Mire Shed
+  x: 0.0391
+  y: 0.1993
+  type: item
+  memory:
+  - address: 0xF21A
+    mask: 0x10
+  - address: 0xF21A
+    mask: 0x20
+- name: Misery Mire
+  x: 0.0742
+  y: 0.1957
+  type: item
+- name: Skull Woods Back
+  x: 0.0392
+  y: 0.9484
+  type: item
