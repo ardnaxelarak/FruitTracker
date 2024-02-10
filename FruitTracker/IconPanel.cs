@@ -3,8 +3,6 @@ using System.Windows.Forms;
 
 namespace FruitTracker {
     public partial class IconPanel : UserControl {
-        private static readonly IconManager IM = IconManager.Instance;
-
         public Icon? Icon { get; set; }
 
         public event Action<Icon>? OnIconClicked;
@@ -23,7 +21,7 @@ namespace FruitTracker {
             }
         }
 
-        private void IconPanel_Click(object sender, System.EventArgs e) {
+        private void IconPanel_Click(object sender, EventArgs e) {
             if (Icon != null) {
                 OnIconClicked?.Invoke(Icon);
             }

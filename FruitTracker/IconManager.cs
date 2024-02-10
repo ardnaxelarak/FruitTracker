@@ -19,7 +19,7 @@ namespace FruitTracker {
             if (!images.ContainsKey(name)) {
                 try {
                     images[name] = Image.FromFile("Assets/icons/" + name + ".png");
-                } catch (FileNotFoundException ex) {
+                } catch (FileNotFoundException) {
                     return new Bitmap(24, 24);
                 }
             }

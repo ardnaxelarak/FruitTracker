@@ -88,6 +88,9 @@ namespace FruitTracker {
                     e.Graphics.FillEllipse(brush, innerRect);
                     e.Graphics.DrawEllipse(iconOutline, innerRect);
                 }
+                if (loc.Annotations.Count > 0) {
+                    e.Graphics.DrawImage(IM.GetImage("plus"), innerRect);
+                }
             }
         }
 

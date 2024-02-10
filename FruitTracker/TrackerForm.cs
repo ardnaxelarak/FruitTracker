@@ -32,10 +32,13 @@ namespace FruitTracker {
         private readonly IconSelector entranceSelector;
         private readonly IconSelector dropdownSelector;
         private readonly IconSelector itemSelector;
+        private readonly IconSelector annotationDisplay;
+        private readonly IconSelector annotationSelector;
         private readonly List<IconSelector> selectors = new();
 
         private IconList iconList = new();
         private MapIcon? selectedIcon;
+        private MapIcon? hoverIcon;
 
         private Dictionary<string, int> remainingEntrances = new();
         private Dictionary<string, int> remainingDropdowns = new();
@@ -44,31 +47,51 @@ namespace FruitTracker {
         private bool trackEntrances = false;
         private bool doorShuffle = false;
 
+        private Position popupPosition;
+        private Position annotationPosition;
+
         private dynamic? tracker;
 
         public TrackerForm() {
             InitializeComponent();
 
             entranceSelector = new() {
-                Visible = false
+                Visible = false,
             };
             entranceSelector.OnIconClicked += EntranceSelectorIconClicked;
             selectors.Add(entranceSelector);
             Controls.Add(entranceSelector);
 
             dropdownSelector = new() {
-                Visible = false
+                Visible = false,
             };
             dropdownSelector.OnIconClicked += DropdownSelectorIconClicked;
             selectors.Add(dropdownSelector);
             Controls.Add(dropdownSelector);
 
             itemSelector = new() {
-                Visible = false
+                Visible = false,
             };
             itemSelector.OnIconClicked += ItemSelectorIconClicked;
             selectors.Add(itemSelector);
             Controls.Add(itemSelector);
+
+            annotationDisplay = new() {
+                Visible = false,
+                SingleRow = true,
+                BackColor = Color.DarkGray,
+            };
+            annotationDisplay.OnIconClicked += AnnotationDisplayIconClicked;
+            selectors.Add(annotationDisplay);
+            Controls.Add(annotationDisplay);
+
+            annotationSelector = new() {
+                Visible = false,
+                BackColor = Color.DarkGray,
+            };
+            annotationSelector.OnIconClicked += AnnotationSelectorIconClicked;
+            selectors.Add(annotationSelector);
+            Controls.Add(annotationSelector);
 
 
             lightWorldMap = new() {
@@ -85,9 +108,13 @@ namespace FruitTracker {
 
             lightWorldMap.OnMapIconSelect += MapIconClicked;
             lightWorldMap.OnMapIconDeselect += MapIconDeselect;
+            lightWorldMap.OnMapIconHover += MapIconHover;
+            lightWorldMap.OnMapIconExit += MapIconExit;
 
             darkWorldMap.OnMapIconSelect += MapIconClicked;
             darkWorldMap.OnMapIconDeselect += MapIconDeselect;
+            darkWorldMap.OnMapIconHover += MapIconHover;
+            darkWorldMap.OnMapIconExit += MapIconExit;
 
             LoadLayout("Resources/locations_items.yml", "Resources/icons.yml");
 
@@ -134,6 +161,36 @@ namespace FruitTracker {
             darkWorldMap.Locations.AddRange(world.Dark.Select(CreateMapIcon).ToList());
         }
 
+        private void MapIconHover(MapIcon icon, Point screenPoint) {
+            if (selectedIcon == null && hoverIcon != icon) {
+                if (icon != null && icon.Annotations.Count > 0) {
+                    annotationDisplay.ShowIcons(icon.Annotations);
+                    Point clientPoint = PointToClient(screenPoint);
+                    if (clientPoint.X > Width / 2) {
+                        annotationDisplay.Left = clientPoint.X - 30 - annotationDisplay.Width;
+                    } else {
+                        annotationDisplay.Left = clientPoint.X + 30;
+                    }
+                    if (clientPoint.Y > Height / 2) {
+                        annotationDisplay.Top = clientPoint.Y - 30 - annotationDisplay.Height;
+                    } else {
+                        annotationDisplay.Top = clientPoint.Y + 30;
+                    }
+                    annotationDisplay.Visible = true;
+                } else {
+                    annotationDisplay.Visible = false;
+                }
+                hoverIcon = icon;
+            }
+        }
+
+        private void MapIconExit() {
+            if (selectedIcon == null) {
+                annotationDisplay.Visible = false;
+                hoverIcon = null;
+            }
+        }
+
         private void MapIconClicked(MouseButtons button, MapIcon icon, Point screenPoint) {
             switch (button) {
                 case MouseButtons.Left:
@@ -150,6 +207,7 @@ namespace FruitTracker {
 
         private void MapIconLeftClicked(MapIcon icon, Point screenPoint) {
             selectedIcon = icon;
+            hoverIcon = null;
             Point clientPoint = PointToClient(screenPoint);
             selectors.ForEach(selector => { selector.Visible = false; });
 
@@ -177,15 +235,44 @@ namespace FruitTracker {
             if (selector != null) {
                 if (clientPoint.X > Width / 2) {
                     selector.Left = clientPoint.X - 30 - selector.Width;
+                    popupPosition.X = clientPoint.X - 30;
+                    popupPosition.Anchor = AnchorStyles.Right;
                 } else {
                     selector.Left = clientPoint.X + 30;
+                    popupPosition.X = clientPoint.X + 30;
+                    popupPosition.Anchor = AnchorStyles.Left;
                 }
                 if (clientPoint.Y > Height / 2) {
                     selector.Top = clientPoint.Y - 30 - selector.Height;
+                    popupPosition.Y = clientPoint.Y - 30;
+                    popupPosition.Anchor |= AnchorStyles.Bottom;
                 } else {
                     selector.Top = clientPoint.Y + 30;
+                    popupPosition.Y = clientPoint.Y + 30;
+                    popupPosition.Anchor |= AnchorStyles.Top;
                 }
                 selector.Visible = true;
+
+                annotationDisplay.ShowIcons(icon.Annotations.Append(new() { Filename = "plus" }).ToList());
+                if (clientPoint.X > Width / 2) {
+                    annotationDisplay.Left = clientPoint.X - 30 - annotationDisplay.Width;
+                    annotationPosition.X = clientPoint.X - 30;
+                    annotationPosition.Anchor = AnchorStyles.Right;
+                } else {
+                    annotationDisplay.Left = clientPoint.X + 30;
+                    annotationPosition.X = clientPoint.X + 30;
+                    annotationPosition.Anchor = AnchorStyles.Left;
+                }
+                if (clientPoint.Y > Height / 2) {
+                    annotationDisplay.Top = clientPoint.Y + 30;
+                    annotationPosition.Y = clientPoint.Y + 30;
+                    annotationPosition.Anchor |= AnchorStyles.Top;
+                } else {
+                    annotationDisplay.Top = clientPoint.Y - 30 - annotationDisplay.Height;
+                    annotationPosition.Y = clientPoint.Y - 30;
+                    annotationPosition.Anchor |= AnchorStyles.Bottom;
+                }
+                annotationDisplay.Visible = true;
             }
         }
 
@@ -204,6 +291,8 @@ namespace FruitTracker {
                 }
             }
             icon.Reset();
+            annotationDisplay.Visible = false;
+            hoverIcon = null;
             UpdateIcon(icon);
         }
 
@@ -222,6 +311,7 @@ namespace FruitTracker {
                 selectedIcon.DisplayIcon = icon;
                 remainingEntrances[icon.Filename] -= 1;
                 entranceSelector.Visible = false;
+                annotationDisplay.Visible = false;
 
                 UpdateIcon(selectedIcon);
                 selectedIcon = null;
@@ -233,6 +323,7 @@ namespace FruitTracker {
                 selectedIcon.DisplayIcon = icon;
                 remainingDropdowns[icon.Filename] -= 1;
                 dropdownSelector.Visible = false;
+                annotationDisplay.Visible = false;
 
                 UpdateIcon(selectedIcon);
                 selectedIcon = null;
@@ -243,9 +334,41 @@ namespace FruitTracker {
             if (selectedIcon != null) {
                 selectedIcon.DisplayIcon = icon;
                 itemSelector.Visible = false;
+                annotationDisplay.Visible = false;
 
                 UpdateIcon(selectedIcon);
                 selectedIcon = null;
+            }
+        }
+
+        private void AnnotationDisplayIconClicked(Icon icon) {
+            if (selectedIcon != null) {
+                if (icon.Filename == "plus") {
+                    itemSelector.Visible = false;
+                    entranceSelector.Visible = false;
+                    dropdownSelector.Visible = false;
+                    annotationSelector.ShowIcons(iconList.Item);
+                    popupPosition.SetLocation(annotationSelector);
+                    annotationSelector.Visible = true;
+                } else {
+                    selectedIcon.Annotations.Remove(icon);
+
+                    annotationDisplay.ShowIcons(selectedIcon.Annotations.Append(new() { Filename = "plus" }).ToList());
+                    annotationPosition.SetLocation(annotationDisplay);
+
+                    UpdateIcon(selectedIcon);
+                }
+            }
+        }
+
+        private void AnnotationSelectorIconClicked(Icon icon) {
+            if (selectedIcon != null) {
+                selectedIcon.Annotations.Add(icon);
+
+                annotationDisplay.ShowIcons(selectedIcon.Annotations.Append(new() { Filename = "plus" }).ToList());
+                annotationPosition.SetLocation(annotationDisplay);
+
+                UpdateIcon(selectedIcon);
             }
         }
 

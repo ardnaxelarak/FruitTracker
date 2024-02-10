@@ -11,6 +11,8 @@ namespace FruitTracker {
 
         public LocationType Type { get; set; }
 
+        public List<Icon> Annotations { get; set; } = new();
+
         private bool cleared;
 
         public bool Cleared {
@@ -32,6 +34,7 @@ namespace FruitTracker {
             DisplayIcon = null;
             Cleared = false;
             ManuallyUpdated = false;
+            Annotations.Clear();
         }
 
         public void CheckAuto() {

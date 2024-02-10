@@ -8,9 +8,10 @@ namespace FruitTracker {
         private readonly List<IconPanel> boxes = new();
 
         public event Action<Icon>? OnIconClicked;
+        public bool SingleRow { get; set; } = false;
 
         public IconSelector() : base() {
-            BackColor = Color.DimGray;
+            BackColor = Color.Gray;
             Padding = new(3);
         }
 
@@ -34,6 +35,11 @@ namespace FruitTracker {
 
             int columns = (int) Math.Ceiling(Math.Sqrt(icons.Count));
             int rows = (int) Math.Ceiling(icons.Count / (double) columns);
+
+            if (SingleRow) {
+                rows = 1;
+                columns = icons.Count;
+            }
 
             Width = 34 * columns + 6;
             Height = 34 * rows + 6;
