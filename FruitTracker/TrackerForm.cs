@@ -280,6 +280,7 @@ namespace FruitTracker {
             icon.Cleared = true;
             icon.ManuallyUpdated = true;
             UpdateIcon(icon);
+            selectors.ForEach(selector => { selector.Visible = false; });
         }
 
         private void MapIconMiddleClicked(MapIcon icon, Point screenPoint) {
@@ -291,9 +292,9 @@ namespace FruitTracker {
                 }
             }
             icon.Reset();
-            annotationDisplay.Visible = false;
-            hoverIcon = null;
             UpdateIcon(icon);
+            selectors.ForEach(selector => { selector.Visible = false; });
+            hoverIcon = null;
         }
 
         private void UpdateIcon(MapIcon icon) {
@@ -308,6 +309,9 @@ namespace FruitTracker {
 
         private void EntranceSelectorIconClicked(Icon icon) {
             if (selectedIcon != null) {
+                if (selectedIcon.DisplayIcon != null) {
+                    remainingEntrances[selectedIcon.DisplayIcon.Filename] += 1;
+                }
                 selectedIcon.DisplayIcon = icon;
                 remainingEntrances[icon.Filename] -= 1;
                 entranceSelector.Visible = false;
@@ -320,6 +324,9 @@ namespace FruitTracker {
 
         private void DropdownSelectorIconClicked(Icon icon) {
             if (selectedIcon != null) {
+                if (selectedIcon.DisplayIcon != null) {
+                    remainingDropdowns[selectedIcon.DisplayIcon.Filename] += 1;
+                }
                 selectedIcon.DisplayIcon = icon;
                 remainingDropdowns[icon.Filename] -= 1;
                 dropdownSelector.Visible = false;
