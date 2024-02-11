@@ -15,11 +15,6 @@ using YamlDotNet.Serialization.NamingConventions;
 
 namespace FruitTracker {
     public partial class TrackerForm : Form {
-        private static readonly Color clearedColor = Color.FromArgb(128, 128, 128);
-        private static readonly Color entranceColor = ColorTranslator.FromHtml("#3ECF00");
-        private static readonly Color dropdownColor = ColorTranslator.FromHtml("#64D3FF");
-        private static readonly Color itemColor = ColorTranslator.FromHtml("#F4FF55");
-
         private static readonly int PORT = 5777;
 
         private readonly SnesController snes;
@@ -166,16 +161,8 @@ namespace FruitTracker {
                 if (icon != null && icon.Annotations.Count > 0) {
                     annotationDisplay.ShowIcons(icon.Annotations);
                     Point clientPoint = PointToClient(screenPoint);
-                    if (clientPoint.X > Width / 2) {
-                        annotationDisplay.Left = clientPoint.X - 30 - annotationDisplay.Width;
-                    } else {
-                        annotationDisplay.Left = clientPoint.X + 30;
-                    }
-                    if (clientPoint.Y > Height / 2) {
-                        annotationDisplay.Top = clientPoint.Y - 30 - annotationDisplay.Height;
-                    } else {
-                        annotationDisplay.Top = clientPoint.Y + 30;
-                    }
+                    Position pos = Position.FromContainer(clientPoint, this, false);
+                    pos.SetLocation(annotationDisplay);
                     annotationDisplay.Visible = true;
                 } else {
                     annotationDisplay.Visible = false;
@@ -233,54 +220,28 @@ namespace FruitTracker {
             }
 
             if (selector != null) {
-                if (clientPoint.X > Width / 2) {
-                    selector.Left = clientPoint.X - 30 - selector.Width;
-                    popupPosition.X = clientPoint.X - 30;
-                    popupPosition.Anchor = AnchorStyles.Right;
-                } else {
-                    selector.Left = clientPoint.X + 30;
-                    popupPosition.X = clientPoint.X + 30;
-                    popupPosition.Anchor = AnchorStyles.Left;
-                }
-                if (clientPoint.Y > Height / 2) {
-                    selector.Top = clientPoint.Y - 30 - selector.Height;
-                    popupPosition.Y = clientPoint.Y - 30;
-                    popupPosition.Anchor |= AnchorStyles.Bottom;
-                } else {
-                    selector.Top = clientPoint.Y + 30;
-                    popupPosition.Y = clientPoint.Y + 30;
-                    popupPosition.Anchor |= AnchorStyles.Top;
-                }
+                popupPosition = Position.FromContainer(clientPoint, this, false);
+                popupPosition.SetLocation(selector);
                 selector.Visible = true;
 
                 annotationDisplay.ShowIcons(icon.Annotations.Append(new() { Filename = "plus" }).ToList());
-                if (clientPoint.X > Width / 2) {
-                    annotationDisplay.Left = clientPoint.X - 30 - annotationDisplay.Width;
-                    annotationPosition.X = clientPoint.X - 30;
-                    annotationPosition.Anchor = AnchorStyles.Right;
-                } else {
-                    annotationDisplay.Left = clientPoint.X + 30;
-                    annotationPosition.X = clientPoint.X + 30;
-                    annotationPosition.Anchor = AnchorStyles.Left;
-                }
-                if (clientPoint.Y > Height / 2) {
-                    annotationDisplay.Top = clientPoint.Y + 30;
-                    annotationPosition.Y = clientPoint.Y + 30;
-                    annotationPosition.Anchor |= AnchorStyles.Top;
-                } else {
-                    annotationDisplay.Top = clientPoint.Y - 30 - annotationDisplay.Height;
-                    annotationPosition.Y = clientPoint.Y - 30;
-                    annotationPosition.Anchor |= AnchorStyles.Bottom;
-                }
+                annotationPosition = Position.FromContainer(clientPoint, this, true);
+                annotationPosition.SetLocation(annotationDisplay);
                 annotationDisplay.Visible = true;
             }
         }
 
         private void MapIconRightClicked(MapIcon icon, Point screenPoint) {
-            icon.Cleared = true;
-            icon.ManuallyUpdated = true;
-            UpdateIcon(icon);
-            selectors.ForEach(selector => { selector.Visible = false; });
+            if (icon.Cleared) {
+                icon.Cleared = false;
+                UpdateIcon(icon);
+                selectors.ForEach(selector => { selector.Visible = false; });
+            } else {
+                icon.Cleared = true;
+                icon.ManuallyUpdated = true;
+                UpdateIcon(icon);
+                selectors.ForEach(selector => { selector.Visible = false; });
+            }
         }
 
         private void MapIconMiddleClicked(MapIcon icon, Point screenPoint) {

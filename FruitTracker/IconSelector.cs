@@ -11,6 +11,7 @@ namespace FruitTracker {
         public bool SingleRow { get; set; } = false;
 
         public IconSelector() : base() {
+            BorderStyle = BorderStyle.FixedSingle;
             BackColor = Color.Gray;
             Padding = new(3);
         }
@@ -41,8 +42,8 @@ namespace FruitTracker {
                 columns = icons.Count;
             }
 
-            Width = 34 * columns + 6;
-            Height = 34 * rows + 6;
+            Width = 34 * columns + 8;
+            Height = 34 * rows + 8;
             BringToFront();
         }
 

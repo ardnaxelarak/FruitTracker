@@ -32,8 +32,8 @@ namespace FruitTracker {
             this.darkWorldPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.spacerLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.resetIcon = new System.Windows.Forms.ToolStripStatusLabel();
+            this.spacerLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.mapShuffleLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.compassShuffleLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.bigKeyShuffleLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -106,12 +106,6 @@ namespace FruitTracker {
             this.statusStrip.SizingGrip = false;
             this.statusStrip.TabIndex = 3;
             // 
-            // spacerLabel
-            // 
-            this.spacerLabel.Name = "spacerLabel";
-            this.spacerLabel.Size = new System.Drawing.Size(812, 31);
-            this.spacerLabel.Spring = true;
-            // 
             // resetIcon
             // 
             this.resetIcon.AutoSize = false;
@@ -121,6 +115,12 @@ namespace FruitTracker {
             this.resetIcon.Name = "resetIcon";
             this.resetIcon.Size = new System.Drawing.Size(24, 34);
             this.resetIcon.Click += new System.EventHandler(this.resetIcon_Click);
+            // 
+            // spacerLabel
+            // 
+            this.spacerLabel.Name = "spacerLabel";
+            this.spacerLabel.Size = new System.Drawing.Size(814, 31);
+            this.spacerLabel.Spring = true;
             // 
             // mapShuffleLabel
             // 

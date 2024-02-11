@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace FruitTracker {
@@ -19,7 +20,7 @@ namespace FruitTracker {
 
         private static readonly Pen iconOutline = new(Color.Black, 3);
 
-        public float IconSize { get; set; } = 30;
+        public float IconSize { get; set; } = 28;
         public Image? MapImage { get; set; }
         public List<MapIcon> Locations { get; set; } = new();
 
@@ -44,14 +45,13 @@ namespace FruitTracker {
                     Height = IconSize + 7,
                 };
                 Invalidate(Rectangle.Round(rect));
-                Update();
             }
         }
 
         protected override void OnPaint(PaintEventArgs e) {
             base.OnPaint(e);
 
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
             if (MapImage != null) {
                 e.Graphics.DrawImage(MapImage, ClientRectangle);
@@ -64,11 +64,11 @@ namespace FruitTracker {
                     Width = IconSize,
                     Height = IconSize,
                 };
-                float innerWidth = IconSize * 0.75f;
+                int innerWidth = (int) Math.Round(IconSize * 0.75f) - 1;
 
-                RectangleF innerRect = new() {
-                    X = loc.X * Width - innerWidth / 2,
-                    Y = loc.Y * Height - innerWidth / 2,
+                Rectangle innerRect = new() {
+                    X = (int) Math.Round(loc.X * Width - innerWidth / 2),
+                    Y = (int) Math.Round(loc.Y * Height - innerWidth / 2),
                     Width = innerWidth,
                     Height = innerWidth,
                 };
@@ -89,6 +89,8 @@ namespace FruitTracker {
                     e.Graphics.DrawEllipse(iconOutline, innerRect);
                 }
                 if (loc.Annotations.Count > 0) {
+                    innerRect.Width += 1;
+                    innerRect.Height += 1;
                     e.Graphics.DrawImage(IM.GetImage("plus"), innerRect);
                 }
             }
