@@ -8,6 +8,8 @@ namespace FruitTracker {
     public partial class ChestBox : UserControl {
         private int maxChecks;
         private int checks;
+        private int tempInput = 0;
+        private bool hasFocus = false;
 
         public Dungeon DungeonId { get; set; }
 
@@ -71,6 +73,41 @@ namespace FruitTracker {
                     Checks--;
                 }
             }
+        }
+
+        private void ChestBox_MouseLeave(object sender, EventArgs e) {
+            tempInput = 0;
+            hasFocus = false;
+        }
+
+        private void ChestBox_KeyDown(object sender, KeyEventArgs e) {
+            if (!hasFocus) {
+                return;
+            }
+            int? value = null;
+            if (e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) {
+                value = e.KeyCode - Keys.D0;
+            } else if (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9) {
+                value = e.KeyCode - Keys.NumPad0;
+            }
+            if (value != null) {
+                tempInput = (tempInput * 10) + value.Value;
+                return;
+            }
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return) {
+                if (tempInput > 0 && tempInput < 999) {
+                    MaxChecks = tempInput;
+                }
+            }
+            if (e.KeyCode == Keys.Delete || e.KeyCode == Keys.Back) {
+                MaxChecks = 999;
+                tempInput = 0;
+            }
+        }
+
+        private void ChestBox_MouseEnter(object sender, EventArgs e) {
+            Focus();
+            hasFocus = true;
         }
     }
 }

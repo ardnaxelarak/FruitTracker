@@ -161,18 +161,7 @@ namespace FruitTracker {
                 hyruleCastleDungeonItems.ShowCompass = doorShuffle;
                 castleTowerDungeonItems.Visible = doorShuffle;
 
-                if (!doorShuffle) {
-                    UpdateMaxCheckCounts();
-                } else {
-                    foreach (KeyValuePair<Dungeon, DungeonBoxes> kvp in boxes) {
-                        if (kvp.Value.ChestBox is ChestBox chestBox) {
-                            chestBox.MaxChecks = 999;
-                        }
-                        if (kvp.Value.KeyBox is KeyBox keyBox) {
-                            keyBox.MaxKeys = 999;
-                        }
-                    }
-                }
+                ResetMaxCheckCounts();
             }
         }
 
@@ -240,6 +229,21 @@ namespace FruitTracker {
                     }
                     if (kvp.Value.KeyBox is KeyBox keyBox) {
                         keyBox.MaxKeys = keys[kvp.Key];
+                    }
+                }
+            }
+        }
+
+        public void ResetMaxCheckCounts() {
+            if (!DoorShuffle) {
+                UpdateMaxCheckCounts();
+            } else {
+                foreach (KeyValuePair<Dungeon, DungeonBoxes> kvp in boxes) {
+                    if (kvp.Value.ChestBox is ChestBox chestBox) {
+                        chestBox.MaxChecks = 999;
+                    }
+                    if (kvp.Value.KeyBox is KeyBox keyBox) {
+                        keyBox.MaxKeys = 999;
                     }
                 }
             }

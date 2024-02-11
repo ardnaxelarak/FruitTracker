@@ -517,6 +517,7 @@ namespace FruitTracker {
                 snesToken.Cancel();
                 snesToken = new();
             }
+            dungeonTable1.ResetMaxCheckCounts();
             dungeonTable1.ResetCheckCounts();
             dungeonTable1.ResetKeyCounts();
             dungeonTable1.ResetDungeonItems();

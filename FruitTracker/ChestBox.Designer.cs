@@ -45,6 +45,8 @@
             this.counterLabel.Text = "2";
             this.counterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.counterLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chestIconBox_MouseClick);
+            this.counterLabel.MouseEnter += new System.EventHandler(this.ChestBox_MouseEnter);
+            this.counterLabel.MouseLeave += new System.EventHandler(this.ChestBox_MouseLeave);
             // 
             // chestIconBox
             // 
@@ -60,6 +62,8 @@
             this.chestIconBox.TabIndex = 0;
             this.chestIconBox.TabStop = false;
             this.chestIconBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chestIconBox_MouseClick);
+            this.chestIconBox.MouseEnter += new System.EventHandler(this.ChestBox_MouseEnter);
+            this.chestIconBox.MouseLeave += new System.EventHandler(this.ChestBox_MouseLeave);
             // 
             // ChestBox
             // 
@@ -70,6 +74,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChestBox";
             this.Size = new System.Drawing.Size(48, 48);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ChestBox_KeyDown);
+            this.MouseEnter += new System.EventHandler(this.ChestBox_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.ChestBox_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.chestIconBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
