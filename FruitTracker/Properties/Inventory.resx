@@ -214,6 +214,9 @@
   <data name="glove_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icons\items\glove_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="glove_weak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icons\items\glove_weak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icons\dungeons\GT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -258,6 +261,9 @@
   </data>
   <data name="mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icons\items\mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mirror_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icons\items\mirror_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icons\dungeons\MM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -483,5 +489,11 @@
   </data>
   <data name="tunic_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icons\items\tunic_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2_gloves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icons\items\2_gloves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_gloves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icons\items\3_gloves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

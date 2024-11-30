@@ -500,5 +500,27 @@ namespace FruitTracker {
             lightWorldMap.Refresh();
             darkWorldMap.Refresh();
         }
+
+        private void tripleGloveLabel_MouseDown(object sender, MouseEventArgs e) {
+            inventoryTable1.TripleGlove = !inventoryTable1.TripleGlove;
+            tripleGloveLabel.Image = inventoryTable1.TripleGlove ? Inventory._3_gloves : Inventory._2_gloves;
+        }
+
+        private void doubleMirrorLabel_MouseDown(object sender, MouseEventArgs e) {
+            inventoryTable1.DoubleMirror = !inventoryTable1.DoubleMirror;
+            doubleMirrorLabel.Image = inventoryTable1.DoubleMirror ? Inventory.mirror : Inventory.mirror_2;
+        }
+
+        private void funnySettingsLabel_MouseDown(object sender, MouseEventArgs e) {
+            if (tripleGloveLabel.Visible) {
+                tripleGloveLabel.Visible = false;
+                doubleMirrorLabel.Visible = false;
+                funnySettingsLabel.Image = Resources.expand;
+            } else {
+                tripleGloveLabel.Visible = true;
+                doubleMirrorLabel.Visible = true;
+                funnySettingsLabel.Image = Resources.collapse;
+            }
+        }
     }
 }

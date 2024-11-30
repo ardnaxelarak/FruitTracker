@@ -1,5 +1,6 @@
 ﻿using ALttPREffectProcessor;
 using FruitTracker.Properties;
+using Microsoft.Owin.Security.Provider;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -39,10 +40,38 @@ namespace FruitTracker {
         private readonly InventoryIcon capeIcon;
         private readonly InventoryIcon mirrorIcon;
         private readonly InventoryIcon pearlIcon;
+        private readonly EntranceMedallionIcon mmIcon;
+        private readonly EntranceMedallionIcon trIcon;
 
         private readonly List<InventoryIcon> inventoryIcons = new();
+        private readonly List<EntranceMedallionIcon> entranceIcons = new();
 
         private Tracking? tracking;
+
+        private bool tripleGlove = false;
+        private bool doubleMirror = false;
+
+        private readonly string[][] mirrorMapItems = new string[][] {
+            new [] { "no_mirror" },
+            new [] { "map" },
+            new [] { "mirror" },
+        };
+        private readonly string[][] doubleMirrorItems = new string[][] {
+            new [] { "no_mirror" },
+            new [] { "mirror" },
+            new [] { "mirror_2" },
+        };
+        private readonly string[][] doubleGloveItems = new string[][] {
+            new [] { "no_glove" },
+            new [] { "glove_1" },
+            new [] { "glove_2" },
+        };
+        private readonly string[][] tripleGloveItems = new string[][] {
+            new [] { "no_glove" },
+            new [] { "glove_weak" },
+            new [] { "glove_1" },
+            new [] { "glove_2" },
+        };
 
         public InventoryTable() {
             InitializeComponent();
@@ -226,11 +255,7 @@ namespace FruitTracker {
             gloveIcon = new() {
                 BackColor = itemLayoutPanel.BackColor,
                 CellId = "gloveCell",
-                ImageSets = new string[][] {
-                    new [] { "no_glove" },
-                    new [] { "glove_1" },
-                    new [] { "glove_2" },
-                },
+                ImageSets = doubleGloveItems,
                 Value = 0,
             };
             itemLayoutPanel.Controls.Add(gloveIcon, 6, 1);
@@ -279,8 +304,8 @@ namespace FruitTracker {
                 CellId = "fluteCell",
                 ImageSets = new string[][] {
                     new [] { "no_flute" },
-                    new [] { "flute" },
-                    new [] { "flute" },
+                    new [] { "flute", "small-x" },
+                    new [] { "flute", "duck" },
                 },
                 Value = 0,
             };
@@ -402,11 +427,7 @@ namespace FruitTracker {
             mirrorIcon = new() {
                 BackColor = itemLayoutPanel.BackColor,
                 CellId = "mirrorCell",
-                ImageSets = new string[][] {
-                    new [] { "no_mirror" },
-                    new [] { "map" },
-                    new [] { "mirror" },
-                },
+                ImageSets = mirrorMapItems,
                 Value = 0,
             };
             itemLayoutPanel.Controls.Add(mirrorIcon, 4, 3);
@@ -423,11 +444,55 @@ namespace FruitTracker {
             };
             itemLayoutPanel.Controls.Add(pearlIcon, 5, 3);
 			inventoryIcons.Add(pearlIcon);
+
+            mmIcon = new() {
+                BackColor = itemLayoutPanel.BackColor,
+                CellId = "mmEntrance",
+                ImageSets = new string[][] {
+                    new [] { "mm_entrance" },
+                    new [] { "bombos_overlay", "mm_entrance" },
+                    new [] { "ether_overlay", "mm_entrance" },
+                    new [] { "quake_overlay", "mm_entrance" },
+                },
+                Value = 0,
+            };
+            itemLayoutPanel.Controls.Add(mmIcon, 6, 3);
+			entranceIcons.Add(mmIcon);
+
+            trIcon = new() {
+                BackColor = itemLayoutPanel.BackColor,
+                CellId = "trEntrance",
+                ImageSets = new string[][] {
+                    new [] { "tr_entrance" },
+                    new [] { "bombos_overlay", "tr_entrance" },
+                    new [] { "ether_overlay", "tr_entrance" },
+                    new [] { "quake_overlay", "tr_entrance" },
+                },
+                Value = 0,
+            };
+            itemLayoutPanel.Controls.Add(trIcon, 7, 3);
+			entranceIcons.Add(trIcon);
         }
 
         public void SetAutoTracker(Tracking tracking) {
             this.tracking = tracking;
             tracking.OnReceiveUpdate += AutoTrackerUpdate;
+        }
+
+        public bool TripleGlove {
+            get => tripleGlove;
+            set {
+                tripleGlove = value;
+                gloveIcon.ImageSets = tripleGlove ? tripleGloveItems : doubleGloveItems;
+            }
+        }
+
+        public bool DoubleMirror {
+            get => doubleMirror;
+            set {
+                doubleMirror = value;
+                mirrorIcon.ImageSets = doubleMirror ? doubleMirrorItems : mirrorMapItems;
+            }
         }
 
         private void AutoTrackerUpdate() {
@@ -471,10 +536,17 @@ namespace FruitTracker {
             foreach (InventoryIcon icon in inventoryIcons) {
                 icon.UpdateBroadcast();
             }
+            foreach (EntranceMedallionIcon icon in entranceIcons) {
+                icon.UpdateBroadcast();
+            }
         }
 
         public void ResetInventory() {
             foreach (InventoryIcon icon in inventoryIcons) {
+                icon.Value = 0;
+                icon.UpdateBroadcast();
+            }
+            foreach (EntranceMedallionIcon icon in entranceIcons) {
                 icon.Value = 0;
                 icon.UpdateBroadcast();
             }

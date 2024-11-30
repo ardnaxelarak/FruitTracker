@@ -25,7 +25,11 @@ function updateItem(item, images) {
 
     for (const image of images) {
         const img = $('<img>');
-        img.addClass("cell-icon");
+        if (item.endsWith("Entrance")) {
+            img.addClass("entrance-medallion");
+        } else {
+            img.addClass("cell-icon");
+        }
         img.attr('src', image);
         $cell.append(img);
     }

@@ -162,6 +162,7 @@ item:
 - filename: hookshot
 - filename: mushroom
 - filename: powder
+- filename: red_potion
 - filename: smallkey
   overlay: overlays/HC
 - filename: bigkey
@@ -172,6 +173,7 @@ item:
 - filename: ether
 - filename: quake
 - filename: halfmagic
+- filename: green_potion
 - filename: smallkey
   overlay: overlays/EP
 - filename: bigkey
@@ -182,6 +184,7 @@ item:
 - filename: net
 - filename: book
 - filename: shovel
+- filename: blue_potion
 - filename: smallkey
   overlay: overlays/DP
 - filename: bigkey
@@ -191,7 +194,8 @@ item:
 - filename: byrna
 - filename: cape
 - filename: mirror
-- filename: star
+- filename: chest
+- filename: bee
 - filename: smallkey
   overlay: overlays/TH
 - filename: bigkey
@@ -200,8 +204,9 @@ item:
 - filename: glove
 - filename: flippers
 - filename: pearl
-- filename: bigkey
-- filename: smallkey
+- filename: heart
+- filename: heart_piece
+- filename: star
 - filename: smallkey
   overlay: overlays/AT
 - filename: bigkey
@@ -209,11 +214,13 @@ item:
 - filename: sword
 - filename: shield
 - filename: mail
-- filename: heart
-- filename: compass
-- filename: chest
 - filename: bomb
+- filename: arrow
 - filename: rupee
+- filename: triforce_piece
+- filename: map
+- filename: compass
+- filename: smallkey
 - filename: smallkey
   overlay: overlays/PD
 - filename: smallkey
@@ -230,6 +237,7 @@ item:
   overlay: overlays/TR
 - filename: smallkey
   overlay: overlays/GT
+- filename: bigkey
 - filename: bigkey
   overlay: overlays/PD
 - filename: bigkey

@@ -34,6 +34,9 @@ namespace FruitTracker {
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.resetIcon = new System.Windows.Forms.ToolStripStatusLabel();
             this.spacerLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tripleGloveLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.doubleMirrorLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.funnySettingsLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.mapShuffleLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.compassShuffleLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.bigKeyShuffleLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -92,6 +95,9 @@ namespace FruitTracker {
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.resetIcon,
             this.spacerLabel,
+            this.tripleGloveLabel,
+            this.doubleMirrorLabel,
+            this.funnySettingsLabel,
             this.mapShuffleLabel,
             this.compassShuffleLabel,
             this.bigKeyShuffleLabel,
@@ -110,7 +116,7 @@ namespace FruitTracker {
             // 
             this.resetIcon.AutoSize = false;
             this.resetIcon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.resetIcon.Image = global::FruitTracker.Properties.Resources.reset;
+            this.resetIcon.Image = ((System.Drawing.Image)(resources.GetObject("resetIcon.Image")));
             this.resetIcon.Margin = new System.Windows.Forms.Padding(3, 2, 0, 0);
             this.resetIcon.Name = "resetIcon";
             this.resetIcon.Size = new System.Drawing.Size(24, 34);
@@ -119,8 +125,42 @@ namespace FruitTracker {
             // spacerLabel
             // 
             this.spacerLabel.Name = "spacerLabel";
-            this.spacerLabel.Size = new System.Drawing.Size(814, 31);
+            this.spacerLabel.Size = new System.Drawing.Size(802, 31);
             this.spacerLabel.Spring = true;
+            // 
+            // tripleGloveLabel
+            // 
+            this.tripleGloveLabel.AutoSize = false;
+            this.tripleGloveLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tripleGloveLabel.Image = ((System.Drawing.Image)(resources.GetObject("tripleGloveLabel.Image")));
+            this.tripleGloveLabel.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.tripleGloveLabel.Name = "tripleGloveLabel";
+            this.tripleGloveLabel.Size = new System.Drawing.Size(24, 34);
+            this.tripleGloveLabel.Visible = false;
+            this.tripleGloveLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tripleGloveLabel_MouseDown);
+            // 
+            // doubleMirrorLabel
+            // 
+            this.doubleMirrorLabel.AutoSize = false;
+            this.doubleMirrorLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.doubleMirrorLabel.Image = ((System.Drawing.Image)(resources.GetObject("doubleMirrorLabel.Image")));
+            this.doubleMirrorLabel.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.doubleMirrorLabel.Name = "doubleMirrorLabel";
+            this.doubleMirrorLabel.Size = new System.Drawing.Size(24, 34);
+            this.doubleMirrorLabel.Visible = false;
+            this.doubleMirrorLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.doubleMirrorLabel_MouseDown);
+            // 
+            // funnySettingsLabel
+            // 
+            this.funnySettingsLabel.AutoSize = false;
+            this.funnySettingsLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
+            this.funnySettingsLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.funnySettingsLabel.Image = ((System.Drawing.Image)(resources.GetObject("funnySettingsLabel.Image")));
+            this.funnySettingsLabel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.funnySettingsLabel.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.funnySettingsLabel.Name = "funnySettingsLabel";
+            this.funnySettingsLabel.Size = new System.Drawing.Size(12, 34);
+            this.funnySettingsLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.funnySettingsLabel_MouseDown);
             // 
             // mapShuffleLabel
             // 
@@ -166,7 +206,7 @@ namespace FruitTracker {
             // 
             this.entranceLabel.AutoSize = false;
             this.entranceLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.entranceLabel.Image = global::FruitTracker.Properties.Resources.bow;
+            this.entranceLabel.Image = ((System.Drawing.Image)(resources.GetObject("entranceLabel.Image")));
             this.entranceLabel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 0);
             this.entranceLabel.Name = "entranceLabel";
             this.entranceLabel.Size = new System.Drawing.Size(24, 34);
@@ -176,7 +216,7 @@ namespace FruitTracker {
             // 
             this.doorsLabel.AutoSize = false;
             this.doorsLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.doorsLabel.Image = global::FruitTracker.Properties.Resources.open_door;
+            this.doorsLabel.Image = ((System.Drawing.Image)(resources.GetObject("doorsLabel.Image")));
             this.doorsLabel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 0);
             this.doorsLabel.Name = "doorsLabel";
             this.doorsLabel.Size = new System.Drawing.Size(24, 34);
@@ -186,7 +226,7 @@ namespace FruitTracker {
             // 
             this.autoTrackingLabel.AutoSize = false;
             this.autoTrackingLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.autoTrackingLabel.Image = global::FruitTracker.Properties.Resources.gray_snes;
+            this.autoTrackingLabel.Image = ((System.Drawing.Image)(resources.GetObject("autoTrackingLabel.Image")));
             this.autoTrackingLabel.Margin = new System.Windows.Forms.Padding(5, 2, 0, 0);
             this.autoTrackingLabel.Name = "autoTrackingLabel";
             this.autoTrackingLabel.Size = new System.Drawing.Size(24, 34);
@@ -208,10 +248,12 @@ namespace FruitTracker {
             // inventoryTable1
             // 
             this.inventoryTable1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.inventoryTable1.DoubleMirror = false;
             this.inventoryTable1.Location = new System.Drawing.Point(11, 531);
             this.inventoryTable1.Name = "inventoryTable1";
             this.inventoryTable1.Size = new System.Drawing.Size(384, 192);
             this.inventoryTable1.TabIndex = 5;
+            this.inventoryTable1.TripleGlove = false;
             // 
             // TrackerForm
             // 
@@ -251,5 +293,8 @@ namespace FruitTracker {
         private ToolStripStatusLabel smallKeyShuffleLabel;
         private ToolStripStatusLabel doorsLabel;
         private ToolStripStatusLabel resetIcon;
+        private ToolStripStatusLabel doubleMirrorLabel;
+        private ToolStripStatusLabel funnySettingsLabel;
+        private ToolStripStatusLabel tripleGloveLabel;
     }
 }

@@ -13,16 +13,12 @@ namespace FruitTracker {
                 return this.value;
             } 
             set {
+                if (value >= images.Length) {
+                    value = images.Length - 1;
+                }
                 if (this.value != value) {
                     this.value = value;
-                    if (value < images.Length) {
-                        Icons.Clear();
-                        Icons.AddRange(images[value]);
-                        Refresh();
-                    }
-                    if (CellId.Length > 0) {
-                        TrackerManager.Instance.Tracker?.UpdateItem(CellId, imageSources[value]);
-                    }
+                    UpdateIcon();
                 }
             }
         }
@@ -36,27 +32,39 @@ namespace FruitTracker {
             set {
                 images = value.Select(row => row.Select(item => IM.GetImage($"items/{item}")).ToArray()).ToArray();
                 imageSources = value.Select(row => row.Select(item => $"icons/items/{item}.png").ToArray()).ToArray();
+                UpdateIcon();
             }
         }
 
         public InventoryIcon() : base() {
             Dock = DockStyle.Fill;
             Margin = new Padding(0);
-            OnIconClicked += OnClicked;
+            MouseDown += InventoryIcon_MouseDown;
         }
 
         public void UpdateBroadcast() {
             if (CellId.Length > 0) {
-                TrackerManager.Instance.Tracker?.UpdateItem(CellId, imageSources[value]);
+                if (Value < imageSources.Length) {
+                    TrackerManager.Instance.Tracker?.UpdateItem(CellId, imageSources[Value]);
+                }
             }
         }
 
-        private void OnClicked(MouseButtons button) {
-            if (button == MouseButtons.Left) {
+        private void UpdateIcon() {
+            if (Value < images.Length) {
+                Icons.Clear();
+                Icons.AddRange(images[Value]);
+                Refresh();
+            }
+            UpdateBroadcast();
+        }
+
+        private void InventoryIcon_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button == MouseButtons.Left) {
                 if (Value < images.Length - 1) {
                     Value++;
                 }
-            } else if (button == MouseButtons.Right) {
+            } else if (e.Button == MouseButtons.Right) {
                 if (Value > 0) {
                     Value--;
                 }
