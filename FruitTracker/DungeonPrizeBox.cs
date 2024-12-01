@@ -135,7 +135,7 @@ namespace FruitTracker {
                 dungeonImage = $"icons/dungeons/{dungeonIconSource[DungeonIcon]}_dark.png";
             }
 
-            TrackerManager.Instance.Tracker?.UpdateDungeonPrize(DungeonIcon.ToString(), dungeonImage, prizeImage);
+            TrackerManager.Instance.Tracker.UpdateDungeonPrize(DungeonIcon.ToString(), dungeonImage, prizeImage);
         }
 
         public enum Prize {
@@ -155,7 +155,7 @@ namespace FruitTracker {
             SetImages();
         }
 
-        private Prize NextPrize(Prize current) {
+        private static Prize NextPrize(Prize current) {
             return current switch {
                 Prize.Crystal => Prize.RedCrystal,
                 Prize.RedCrystal => Prize.Pendant,
@@ -165,7 +165,7 @@ namespace FruitTracker {
             };
         }
 
-        private Prize PrevPrize(Prize current) {
+        private static Prize PrevPrize(Prize current) {
             return current switch {
                 Prize.Crystal => Prize.Unknown,
                 Prize.RedCrystal => Prize.Crystal,

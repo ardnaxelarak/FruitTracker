@@ -1,16 +1,19 @@
 ﻿using ALttPREffectProcessor;
 using FruitTracker.Properties;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace FruitTracker {
     public partial class KeyBox : UserControl {
         private int maxKeys = 1;
-        private int keys = 0;
+        private int keys = 999;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public Dungeon DungeonId { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int MaxKeys {
             get => maxKeys;
             set {
@@ -25,6 +28,7 @@ namespace FruitTracker {
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int Keys {
             get => keys;
             set {
@@ -41,7 +45,7 @@ namespace FruitTracker {
                     counterLabel.ForeColor = keys < maxKeys ? Color.White : Color.Lime;
                     keyIconBox.Image = keys > 0 ? Inventory.smallkey : Inventory.no_smallkey;
 
-                    TrackerManager.Instance.Tracker?.UpdateKeys(DungeonId.ToString(), keys, keys == maxKeys);
+                    TrackerManager.Instance.Tracker.UpdateKeys(DungeonId.ToString(), keys, keys == maxKeys);
                 }
             }
         }
@@ -51,7 +55,7 @@ namespace FruitTracker {
         }
 
         public void UpdateBroadcast() {
-            TrackerManager.Instance.Tracker?.UpdateKeys(DungeonId.ToString(), keys, keys == maxKeys);
+            TrackerManager.Instance.Tracker.UpdateKeys(DungeonId.ToString(), keys, keys == maxKeys);
         }
 
         private void keyIconBox_MouseClick(object sender, MouseEventArgs e) {
@@ -64,6 +68,10 @@ namespace FruitTracker {
                     Keys--;
                 }
             }
+        }
+
+        private void KeyBox_Load(object sender, EventArgs e) {
+            Keys = 0;
         }
     }
 }

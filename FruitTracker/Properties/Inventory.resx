@@ -119,381 +119,381 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="arrow_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\arrow_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\arrow_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow_wooden" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\arrow_wooden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\arrow_wooden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\AT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\AT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AT_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\AT_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\AT_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bigkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bigkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bigkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bombos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bombos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bombos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boomerangs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\boomerangs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\boomerangs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boomerang_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\boomerang_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\boomerang_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boomerang_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\boomerang_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\boomerang_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boots" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\boots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\boots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bottle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bottle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottle_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bottle_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bottle_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottle_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bottle_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bottle_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottle_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bottle_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bottle_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottle_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bottle_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bottle_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bugnet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\bugnet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\bugnet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="byrna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\byrna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\byrna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cape" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\cape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\cape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="compass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\compass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\compass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\DP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\DP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DP_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\DP_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\DP_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\EP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\EP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EP_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\EP_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\EP_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ether" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\ether.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\ether.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="firerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\firerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\firerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flippers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\flippers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\flippers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\flute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\flute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="glove_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\glove_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\glove_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="glove_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\glove_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\glove_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="glove_weak" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\glove_weak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\glove_weak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\GT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\GT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GT_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\GT_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\GT_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\hammer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\hammer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\HC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\HC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HC_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\HC_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\HC_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hookshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\hookshot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\hookshot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\icerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\icerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\IP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\IP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IP_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\IP_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\IP_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\lamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\lamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="magic_base" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\magic_base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\magic_base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="magic_half" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\magic_half.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\magic_half.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="magic_quarter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\magic_quarter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\magic_quarter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="map" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mirror_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\mirror_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\mirror_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\MM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\MM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MM_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\MM_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\MM_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mushroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\mushroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\mushroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_bigkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_bigkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_bigkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_bomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_bomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_bomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_bombos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_bombos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_bombos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_boomerangs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_boomerangs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_boomerangs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_boots" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_boots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_boots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_bottle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_bottle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_bottle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_bow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_bow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_bugnet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_bugnet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_bugnet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_byrna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_byrna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_byrna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_cape" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_cape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_cape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_compass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_compass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_compass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_ether" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_ether.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_ether.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_firerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_firerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_firerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_flippers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_flippers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_flippers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_flute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_flute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_flute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_glove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_glove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_glove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_hammer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_hammer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_hookshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_hookshot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_hookshot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_icerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_icerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_icerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_lamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_lamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_lamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_magic_half" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_magic_half.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_magic_half.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_mirror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_mushroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_mushroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_mushroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_pearl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_pearl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_pearl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_powder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_powder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_prize_crystal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\no_prize_crystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\no_prize_crystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_prize_greenpendant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\no_prize_greenpendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\no_prize_greenpendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_prize_pendant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\no_prize_pendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\no_prize_pendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_prize_redcrystal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\no_prize_redcrystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\no_prize_redcrystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_prize_unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\no_prize_unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\no_prize_unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_quake" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_quake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_quake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_shovel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_shovel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_shovel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_smallkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_smallkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_smallkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_somaria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_somaria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_somaria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\no_sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\no_sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\PD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\PD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PD_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\PD_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\PD_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pearl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\pearl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\pearl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\powder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\powder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="prize_crystal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\prize_crystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\prize_crystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="prize_greenpendant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\prize_greenpendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\prize_greenpendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="prize_pendant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\prize_pendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\prize_pendant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="prize_redcrystal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\prize_redcrystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\prize_redcrystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="prize_unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\prize_unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\prize_unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="quake" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\quake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\quake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shield_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\shield_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\shield_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shield_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\shield_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\shield_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shield_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\shield_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\shield_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shovel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\shovel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\shovel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="smallkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\smallkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\smallkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="somaria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\somaria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\somaria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\SP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\SP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SP_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\SP_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\SP_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\SW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\SW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sword_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\sword_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\sword_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sword_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\sword_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\sword_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sword_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\sword_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\sword_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sword_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\sword_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\sword_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SW_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\SW_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\SW_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\TH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\TH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TH_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\TH_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\TH_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\TR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\TR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TR_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\TR_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\TR_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\TT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\TT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TT_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\dungeons\TT_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\dungeons\TT_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tunic_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\tunic_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\tunic_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tunic_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\tunic_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\tunic_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tunic_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\tunic_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\tunic_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_2_gloves" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\2_gloves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\2_gloves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_3_gloves" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icons\items\3_gloves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\wwwroot\icons\items\3_gloves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

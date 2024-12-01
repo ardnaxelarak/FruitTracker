@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -8,6 +9,8 @@ namespace FruitTracker {
         private static readonly IconManager IM = IconManager.Instance;
 
         private int value = 999;
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int Value {
             get {
                 return this.value;
@@ -26,8 +29,10 @@ namespace FruitTracker {
         private Image[][] images = Array.Empty<Image[]>();
         private string[][] imageSources = Array.Empty<string[]>();
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public string CellId { get; set; } = "";
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string[][] ImageSets {
             set {
                 images = value.Select(row => row.Select(item => IM.GetImage($"items/{item}")).ToArray()).ToArray();
@@ -59,7 +64,7 @@ namespace FruitTracker {
             UpdateBroadcast();
         }
 
-        private void InventoryIcon_MouseDown(object sender, MouseEventArgs e) {
+        private void InventoryIcon_MouseDown(object? sender, MouseEventArgs e) {
             if (e.Button == MouseButtons.Left) {
                 if (Value < images.Length - 1) {
                     Value++;

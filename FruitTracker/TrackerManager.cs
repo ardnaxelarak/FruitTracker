@@ -12,7 +12,7 @@ namespace FruitTracker {
             }
         }
 
-        public dynamic? Tracker { get; set; }
+        public ITrackingClient Tracker { get; set; } = new DummyTrackingClient();
 
         public Tracking? Tracking { get; set; }
 

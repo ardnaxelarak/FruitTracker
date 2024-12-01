@@ -1,5 +1,6 @@
 ﻿using ALttPREffectProcessor;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace FruitTracker {
@@ -38,10 +39,16 @@ namespace FruitTracker {
 
         private Tracking? tracking;
         private readonly Dictionary<Dungeon, DungeonBoxes> boxes = new();
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ShuffleMaps { get; set; } = false;
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ShuffleCompasses { get; set; } = false;
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ShuffleSmallKeys { get; set; } = false;
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ShuffleBigKeys { get; set; } = false;
+
         private bool doorShuffle = false;
 
         private struct DungeonBoxes {
@@ -150,6 +157,8 @@ namespace FruitTracker {
             this.tracking = tracking;
             tracking.OnReceiveUpdate += AutoTrackerUpdate;
         }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool DoorShuffle {
             get => doorShuffle;
             set {
@@ -230,6 +239,15 @@ namespace FruitTracker {
                     if (kvp.Value.KeyBox is KeyBox keyBox) {
                         keyBox.MaxKeys = keys[kvp.Key];
                     }
+                }
+            }
+        }
+
+        public void ResetPrizeBoxes() {
+            foreach (KeyValuePair<Dungeon, DungeonBoxes> kvp in boxes) {
+                if (kvp.Value.PrizeBox is DungeonPrizeBox prizeBox) {
+                    prizeBox.PrizeIcon = DungeonPrizeBox.Prize.Unknown;
+                    prizeBox.Completed = false;
                 }
             }
         }

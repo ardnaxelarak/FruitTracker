@@ -1,6 +1,7 @@
 ﻿using ALttPREffectProcessor;
 using FruitTracker.Properties;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -11,8 +12,10 @@ namespace FruitTracker {
         private int tempInput = 0;
         private bool hasFocus = false;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public Dungeon DungeonId { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int MaxChecks {
             get => maxChecks;
             set {
@@ -27,6 +30,7 @@ namespace FruitTracker {
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int Checks {
             get => checks;
             set {
@@ -63,7 +67,7 @@ namespace FruitTracker {
         public void UpdateBroadcast() {
         }
 
-        private void chestIconBox_MouseClick(object sender, MouseEventArgs e) {
+        private void ChestIconBox_MouseClick(object sender, MouseEventArgs e) {
             if (e.Button == MouseButtons.Left) {
                 if (checks < maxChecks) {
                     Checks++;

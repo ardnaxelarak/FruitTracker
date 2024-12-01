@@ -1,7 +1,8 @@
 using ALttPREffectProcessor;
 using FruitTracker.Properties;
-using Microsoft.AspNet.SignalR;
-using Microsoft.Owin.Hosting;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -44,8 +45,6 @@ namespace FruitTracker {
 
         private Position popupPosition;
         private Position annotationPosition;
-
-        private dynamic? tracker;
 
         public TrackerForm() {
             InitializeComponent();
@@ -114,14 +113,24 @@ namespace FruitTracker {
             LoadLayout("Resources/locations_items.yml", "Resources/icons.yml");
 
             snes = SnesController.Instance;
+            snes.OnGameStart += Snes_OnGameStart;
+            snes.OnGameFinish += Snes_OnGameFinish;
             inventoryTable1.SetAutoTracker(snes.GetTracking());
             dungeonTable1.SetAutoTracker(snes.GetTracking());
             TrackerManager.Instance.Tracking = snes.GetTracking();
-            snes.GetTracking().OnReceiveUpdate += AutoUpdateMapIcons;
+            snes.GetTracking().OnReceiveUpdate += AutoTrackerUpdate;
             dungeonTable1.ResetCheckCounts();
         }
 
-        private void AutoUpdateMapIcons() {
+        private void Snes_OnGameFinish() {
+            TrackerManager.Instance.Tracker.StopClock();
+        }
+
+        private void Snes_OnGameStart() {
+            TrackerManager.Instance.Tracker.StartClock();
+        }
+
+        private void AutoTrackerUpdate() {
             lightWorldMap.Locations.ForEach(location => location.CheckAuto());
             darkWorldMap.Locations.ForEach(location => location.CheckAuto());
         }
@@ -130,7 +139,7 @@ namespace FruitTracker {
             snes.OnConnected += () => Invoke(new Action(() => autoTrackingLabel.Image = autoTracking ? Resources.green_snes : Resources.gray_snes));
             snes.OnDisconnected += () => Invoke(new Action(() => autoTrackingLabel.Image = autoTracking ? Resources.red_snes : Resources.gray_snes));
 
-            _ = RunWebserver(mainToken.Token);
+            RunWebserver();
         }
 
         private void LoadLayout(string locations, string icons) {
@@ -438,19 +447,22 @@ namespace FruitTracker {
             }
         }
 
-        private async Task RunWebserver(CancellationToken token) {
+        private void RunWebserver() {
+            WebApplicationBuilder builder = WebApplication.CreateBuilder();
+            builder.Services.AddSignalR();
+
+            WebApplication app = builder.Build();
+
+            app.UseStaticFiles();
+            app.MapHub<TrackingHub>("/webview");
+
             string baseUrl = $"http://localhost:{PORT}/";
-            using (WebApp.Start<WebServer>(baseUrl)) {
-                TrackerManager.Instance.Tracker = GlobalHost.ConnectionManager.GetHubContext<TrackerHub>().Clients.All;
-                TrackerManager.Instance.OnRequestUpdate += () => {
-                    inventoryTable1.UpdateBroadcastView();
-                    dungeonTable1.UpdateBroadcastView();
-                };
-                while (!token.IsCancellationRequested) {
-                    try {
-                        await Task.Delay(TimeSpan.FromSeconds(0.05), token);
-                    } catch (TaskCanceledException) { }
-                }
+            Task _ = app.RunAsync(baseUrl);
+
+            IHubContext<TrackingHub, ITrackingClient>? hub = app.Services.GetService<IHubContext<TrackingHub, ITrackingClient>>();
+
+            if (hub != null) {
+                TrackerManager.Instance.Tracker = hub.Clients.All;
             }
         }
 
@@ -485,6 +497,7 @@ namespace FruitTracker {
                 snesToken.Cancel();
                 snesToken = new();
             }
+            dungeonTable1.ResetPrizeBoxes();
             dungeonTable1.ResetMaxCheckCounts();
             dungeonTable1.ResetCheckCounts();
             dungeonTable1.ResetKeyCounts();
@@ -521,6 +534,18 @@ namespace FruitTracker {
                 doubleMirrorLabel.Visible = true;
                 funnySettingsLabel.Image = Resources.collapse;
             }
+        }
+
+        private void resetTimerLabel_MouseDown(object sender, MouseEventArgs e) {
+            TrackerManager.Instance.Tracker.ResetClock();
+        }
+
+        private void startTimerLabel_MouseDown(object sender, MouseEventArgs e) {
+            TrackerManager.Instance.Tracker.StartClock();
+        }
+
+        private void stopTimerLabel_MouseDown(object sender, MouseEventArgs e) {
+            TrackerManager.Instance.Tracker.StopClock();
         }
     }
 }

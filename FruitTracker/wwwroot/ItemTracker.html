@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Item Tracker</title>
+        <link rel="stylesheet" href="tracker.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+        <script src="tracker.js"></script>
+    </head>
+    <body>
+        <div class="mainTable">
+            <table class="itemsTable">
+                <tr>
+                    <td id="bowCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_bow.png" />
+                    </td>
+                    <td id="boomerangCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_boomerangs.png" />
+                    </td>
+                    <td id="hookshotCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_hookshot.png" />
+                    </td>
+                    <td id="bombCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_bomb.png" />
+                    </td>
+                    <td id="powderCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_powder.png" />
+                    </td>
+                    <td id="mushroomCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_mushroom.png" />
+                    </td>
+                    <td class="half-cell" rowspan=2/>
+                    <td class="half-cell">
+                        <img data-dungeon="EasternPalace" class="dungeon-label-icon" src="icons/dungeons/EP_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="EasternPalace" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="EasternPalace" class="key-count all-keys">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="EasternPalace" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="half-cell">
+                        <img data-dungeon="DesertPalace" class="dungeon-label-icon" src="icons/dungeons/DP_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="DesertPalace" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="DesertPalace" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="DesertPalace" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="firerodCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_firerod.png" />
+                    </td>
+                    <td id="icerodCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_icerod.png" />
+                    </td>
+                    <td id="bombosCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_bombos.png" />
+                    </td>
+                    <td id="etherCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_ether.png" />
+                    </td>
+                    <td id="quakeCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_quake.png" />
+                    </td>
+                    <td id="magicCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_magic_half.png" />
+                    </td>
+                    <td class="half-cell" rowspan=2/>
+                    <td class="half-cell">
+                        <img data-dungeon="TowerOfHera" class="dungeon-label-icon" src="icons/dungeons/TH_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="TowerOfHera" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="TowerOfHera" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="TowerOfHera" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="half-cell">
+                        <img data-dungeon="PalaceOfDarkness" class="dungeon-label-icon" src="icons/dungeons/PD_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="PalaceOfDarkness" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="PalaceOfDarkness" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="PalaceOfDarkness" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="lampCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_lamp.png" />
+                    </td>
+                    <td id="hammerCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_hammer.png" />
+                    </td>
+                    <td id="fluteCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_flute.png" />
+                    </td>
+                    <td id="netCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_bugnet.png" />
+                    </td>
+                    <td id="bookCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_book.png" />
+                    </td>
+                    <td id="shovelCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_shovel.png" />
+                    </td>
+                    <td class="half-cell" rowspan=2/>
+                    <td class="half-cell">
+                        <img data-dungeon="SwampPalace" class="dungeon-label-icon" src="icons/dungeons/SP_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="SwampPalace" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="SwampPalace" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="SwampPalace" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="half-cell">
+                        <img data-dungeon="SkullWoods" class="dungeon-label-icon" src="icons/dungeons/SW_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="SkullWoods" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="SkullWoods" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="SkullWoods" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="bottleCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_bottle.png" />
+                    </td>
+                    <td id="somariaCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_somaria.png" />
+                    </td>
+                    <td id="byrnaCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_byrna.png" />
+                    </td>
+                    <td id="capeCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_cape.png" />
+                    </td>
+                    <td id="mirrorCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_mirror.png" />
+                    </td>
+                    <td id="swordCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_sword.png" />
+                    </td>
+                    <td class="half-cell" rowspan=2/>
+                    <td class="half-cell">
+                        <img data-dungeon="ThievesTown" class="dungeon-label-icon" src="icons/dungeons/TT_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="ThievesTown" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="ThievesTown" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="ThievesTown" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="half-cell">
+                        <img data-dungeon="IcePalace" class="dungeon-label-icon" src="icons/dungeons/IP_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="IcePalace" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="IcePalace" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="IcePalace" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="gloveCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_glove.png" />
+                    </td>
+                    <td id="bootsCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_boots.png" />
+                    </td>
+                    <td id="flippersCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_flippers.png" />
+                    </td>
+                    <td id="pearlCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_pearl.png" />
+                    </td>
+                    <td id="armorCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/tunic_1.png" />
+                    </td>
+                    <td id="shieldCell" class="cell" rowspan=2>
+                        <img class="cell-icon" src="icons/items/no_shield.png" />
+                    </td>
+                    <td id="mmEntrance" class="half-cell">
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="MiseryMire" class="dungeon-label-icon" src="icons/dungeons/MM_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="MiseryMire" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="MiseryMire" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="MiseryMire" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="trEntrance" class="half-cell">
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="TurtleRock" class="dungeon-label-icon" src="icons/dungeons/TR_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="TurtleRock" class="prize-icon" src="icons/dungeons/no_prize_unknown.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="TurtleRock" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="TurtleRock" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                </tr>
+            </table>
+            <table class="itemsTable">
+                <tr>
+                    <td class="quarter-indent" />
+                    <td class="half-cell">
+                        <img data-dungeon="HyruleCastle" class="dungeon-label-icon" src="icons/dungeons/HC.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="HyruleCastle" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="HyruleCastle" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                    <td class="half-cell" />
+                    <td class="half-cell">
+                        <img data-dungeon="CastleTower" class="dungeon-label-icon" src="icons/dungeons/AT_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="CastleTower" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="CastleTower" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                    <td class="half-cell" />
+                    <td class="half-cell">
+                        <img data-dungeon="GanonsTower" class="dungeon-label-icon" src="icons/dungeons/GT_dark.png" />
+                    </td>
+                    <td class="half-cell">
+                        <span data-dungeon="GanonsTower" class="key-count">0</span>
+                    </td>
+                    <td class="half-cell">
+                        <img data-dungeon="GanonsTower" class="dungeon-item-icon" src="icons/items/no_bigkey.png" />
+                    </td>
+                    <td class="half-cell" />
+                    <td class="half-cell" />
+                    <td class="half-cell" />
+                    <td class="half-cell" />
+                    <td class="half-cell" />
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

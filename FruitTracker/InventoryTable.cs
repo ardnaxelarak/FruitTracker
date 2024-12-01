@@ -1,8 +1,6 @@
 ﻿using ALttPREffectProcessor;
-using FruitTracker.Properties;
-using Microsoft.Owin.Security.Provider;
 using System.Collections.Generic;
-using System.Drawing;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace FruitTracker {
@@ -479,6 +477,7 @@ namespace FruitTracker {
             tracking.OnReceiveUpdate += AutoTrackerUpdate;
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool TripleGlove {
             get => tripleGlove;
             set {
@@ -487,6 +486,7 @@ namespace FruitTracker {
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool DoubleMirror {
             get => doubleMirror;
             set {

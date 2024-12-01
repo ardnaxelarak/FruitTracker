@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netframework4.8.1</TargetFramework>
+    <TargetFramework>net9-windows</TargetFramework>
 	<LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
@@ -66,14 +66,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.3" />
-    <PackageReference Include="Microsoft.Owin" Version="4.2.2" />
-    <PackageReference Include="Microsoft.Owin.FileSystems" Version="4.2.2" />
-    <PackageReference Include="Microsoft.Owin.Host.HttpListener" Version="4.2.2" />
-    <PackageReference Include="Microsoft.Owin.Hosting" Version="4.2.2" />
-    <PackageReference Include="Microsoft.Owin.StaticFiles" Version="4.2.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="YamlDotNet" Version="13.3.1" />
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
   <ItemGroup>
@@ -86,25 +81,34 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Assets\icons\*.png">
+    <None Update="wwwroot\icons\*.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Assets\icons\dungeons\*.png">
+    <None Update="wwwroot\icons\dungeons\*.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Assets\icons\items\*.png">
+    <None Update="wwwroot\icons\items\*.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Assets\icons\overlays\*.png">
+    <None Update="wwwroot\icons\overlays\*.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Assets\ItemTracker.html">
+    <None Update="wwwroot\ItemTracker.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Assets\tracker-style.css">
+    <None Update="wwwroot\tracker.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Assets\tracker.js">
+    <None Update="wwwroot\tracker.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="wwwroot\Timer.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="wwwroot\timer.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="wwwroot\timer.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Resources\icons_doors.yml">
