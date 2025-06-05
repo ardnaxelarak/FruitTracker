@@ -521,7 +521,7 @@ namespace FruitTracker {
 
         private void doubleMirrorLabel_MouseDown(object sender, MouseEventArgs e) {
             inventoryTable1.DoubleMirror = !inventoryTable1.DoubleMirror;
-            doubleMirrorLabel.Image = inventoryTable1.DoubleMirror ? Inventory.mirror : Inventory.mirror_2;
+            doubleMirrorLabel.Image = inventoryTable1.DoubleMirror ? Inventory.mirror_2 : Inventory.mirror;
         }
 
         private void funnySettingsLabel_MouseDown(object sender, MouseEventArgs e) {
