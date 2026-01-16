@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -8,6 +9,8 @@ namespace FruitTracker {
         private readonly List<IconPanel> boxes = new();
 
         public event Action<Icon>? OnIconClicked;
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public bool SingleRow { get; set; } = false;
 
         public IconSelector() : base() {

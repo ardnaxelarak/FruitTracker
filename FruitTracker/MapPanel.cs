@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -20,8 +21,13 @@ namespace FruitTracker {
 
         private static readonly Pen iconOutline = new(Color.Black, 3);
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public float IconSize { get; set; } = 28;
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public Image? MapImage { get; set; }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public List<MapIcon> Locations { get; set; } = new();
 
         public event Action<MapIcon, Point>? OnMapIconHover;

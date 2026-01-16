@@ -42,10 +42,13 @@ namespace FruitTracker {
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ShuffleMaps { get; set; } = false;
+
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ShuffleCompasses { get; set; } = false;
+
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ShuffleSmallKeys { get; set; } = false;
+
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ShuffleBigKeys { get; set; } = false;
 
@@ -181,7 +184,7 @@ namespace FruitTracker {
 
             foreach (KeyValuePair<Dungeon, DungeonBoxes> kvp in boxes) {
                 if (kvp.Value.KeyBox != null) {
-                    if (tracking.SmallKeys[kvp.Key] is IEquipment keys) {
+                    if (tracking.ChestSmallKeys[kvp.Key] is IEquipment keys) {
                         kvp.Value.KeyBox.Keys = keys.Value;
                     }
                 }
@@ -199,6 +202,28 @@ namespace FruitTracker {
                 if (kvp.Value.PrizeBox != null) {
                     if (tracking.Bosses[kvp.Key] is IEquipment boss) {
                         kvp.Value.PrizeBox.Completed = boss.Value > 0;
+                    }
+                }
+
+                if (kvp.Value.ChestBox != null) {
+                    if (!this.doorShuffle) {
+                        if (tracking.LocationsChecked[kvp.Key] is IEquipment checks) {
+                            var collected = checks.Value;
+                            if (!this.ShuffleBigKeys && tracking.BigKey[kvp.Key] is IEquipment bigkey) {
+                                collected -= bigkey.Value;
+                            }
+                            if (!this.ShuffleMaps && tracking.Map[kvp.Key] is IEquipment map) {
+                                collected -= map.Value;
+                            }
+                            if (!this.ShuffleCompasses && tracking.Compass[kvp.Key] is IEquipment compass) {
+                                collected -= compass.Value;
+                            }
+                            if (!this.ShuffleSmallKeys && tracking.ChestSmallKeys[kvp.Key] is IEquipment keys) {
+                                collected -= keys.Value;
+                            }
+
+                            kvp.Value.ChestBox.Checks = collected;
+                        }
                     }
                 }
             }

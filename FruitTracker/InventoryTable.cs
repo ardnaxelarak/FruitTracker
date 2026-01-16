@@ -155,6 +155,7 @@ namespace FruitTracker {
                 CellId = "bootsCell",
                 ImageSets = new string[][] {
                     new [] { "no_boots" },
+                    new [] { "blue_boots" },
                     new [] { "boots" },
                 },
                 Value = 0,
@@ -302,6 +303,7 @@ namespace FruitTracker {
                 CellId = "fluteCell",
                 ImageSets = new string[][] {
                     new [] { "no_flute" },
+                    new [] { "green_flute" },
                     new [] { "flute", "small-x" },
                     new [] { "flute", "duck" },
                 },

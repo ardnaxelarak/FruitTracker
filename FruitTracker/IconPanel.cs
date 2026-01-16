@@ -1,8 +1,10 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace FruitTracker {
     public partial class IconPanel : UserControl {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public Icon? Icon { get; set; }
 
         public event Action<Icon>? OnIconClicked;
@@ -16,9 +18,7 @@ namespace FruitTracker {
 
             e.Graphics.Clear(BackColor);
 
-            if (Icon != null) {
-                Icon.Draw(e.Graphics, ClientRectangle);
-            }
+            Icon?.Draw(e.Graphics, ClientRectangle);
         }
 
         private void IconPanel_Click(object sender, EventArgs e) {

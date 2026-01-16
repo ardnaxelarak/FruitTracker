@@ -11,6 +11,8 @@
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <StartupObject>FruitTracker.Program</StartupObject>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <Version>0.4.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -8,6 +9,7 @@ namespace FruitTracker {
     public partial class StackedIcons : UserControl {
         private static readonly IconManager IM = IconManager.Instance;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public List<Image> Icons { get; set; } = new();
 
         public event Action<MouseButtons>? OnIconClicked;

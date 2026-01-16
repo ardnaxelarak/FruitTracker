@@ -1,5 +1,6 @@
 ﻿using ALttPREffectProcessor;
 using FruitTracker.Properties;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace FruitTracker {
@@ -10,8 +11,10 @@ namespace FruitTracker {
 
         private bool showCompass = true;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public Dungeon DungeonId { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public bool BigKey {
             get => bigkey;
             set {
@@ -23,6 +26,7 @@ namespace FruitTracker {
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public bool Map {
             get => map;
             set {
@@ -31,6 +35,7 @@ namespace FruitTracker {
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public bool Compass {
             get => compass;
             set {
@@ -39,6 +44,7 @@ namespace FruitTracker {
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public bool ShowCompass {
             get => showCompass;
             set {

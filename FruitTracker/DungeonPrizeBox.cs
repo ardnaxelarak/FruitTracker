@@ -1,6 +1,7 @@
 ﻿using ALttPREffectProcessor;
 using FruitTracker.Properties;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -85,6 +86,7 @@ namespace FruitTracker {
         private Dungeon dungeon;
         private bool completed;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public Prize PrizeIcon {
             get => prize;
             set {
@@ -95,6 +97,7 @@ namespace FruitTracker {
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public Dungeon DungeonIcon {
             get => dungeon;
             set {
@@ -105,6 +108,7 @@ namespace FruitTracker {
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public bool Completed {
             get => completed;
             set {
@@ -115,6 +119,7 @@ namespace FruitTracker {
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public bool ShowPrize {
             get => prizeBox.Visible;
             set => prizeBox.Visible = value;
