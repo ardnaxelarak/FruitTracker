@@ -1,0 +1,6 @@
+[submodule "cs2snes"]
+	path = cs2snes
+	url = git@github.com:ardnaxelarak/cs2snes
+[submodule "ALttPREffectProcessor"]
+	path = ALttPREffectProcessor
+	url = git@github.com:ardnaxelarak/ALttPREffectProcessor

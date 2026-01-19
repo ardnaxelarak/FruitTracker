@@ -206,9 +206,10 @@ namespace FruitTracker {
                 }
 
                 if (kvp.Value.ChestBox != null) {
-                    if (!this.doorShuffle) {
-                        if (tracking.LocationsChecked[kvp.Key] is IEquipment checks) {
-                            var collected = checks.Value;
+                    if (tracking.LocationsChecked[kvp.Key] is IEquipment checks) {
+                        var collected = checks.Value;
+
+                        if (!this.doorShuffle) {
                             if (!this.ShuffleBigKeys && tracking.BigKey[kvp.Key] is IEquipment bigkey) {
                                 collected -= bigkey.Value;
                             }
@@ -221,9 +222,16 @@ namespace FruitTracker {
                             if (!this.ShuffleSmallKeys && tracking.ChestSmallKeys[kvp.Key] is IEquipment keys) {
                                 collected -= keys.Value;
                             }
-
-                            kvp.Value.ChestBox.Checks = collected;
+                        } else {
+                            if (tracking.DR_DungeonCountDisplayed[kvp.Key] is IEquipment countDisplayed
+                                && tracking.DR_CheckTotals[kvp.Key] is IEquipment checkTotals) {
+                                if (countDisplayed.Value != 0) {
+                                    kvp.Value.ChestBox.MaxChecks = checkTotals.Value;
+                                }
+                            }
                         }
+
+                        kvp.Value.ChestBox.Checks = collected;
                     }
                 }
             }
