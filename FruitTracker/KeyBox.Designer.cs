@@ -23,54 +23,61 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            keyIconBox = new System.Windows.Forms.PictureBox();
-            counterLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize) keyIconBox).BeginInit();
-            SuspendLayout();
+            this.keyIconBox = new System.Windows.Forms.PictureBox();
+            this.counterLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize) this.keyIconBox).BeginInit();
+            this.SuspendLayout();
             // 
             // keyIconBox
             // 
-            keyIconBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            keyIconBox.Image = Properties.Inventory.no_smallkey;
-            keyIconBox.Location = new System.Drawing.Point(0, 0);
-            keyIconBox.Margin = new System.Windows.Forms.Padding(0);
-            keyIconBox.Name = "keyIconBox";
-            keyIconBox.Size = new System.Drawing.Size(48, 48);
-            keyIconBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            keyIconBox.TabIndex = 0;
-            keyIconBox.TabStop = false;
-            keyIconBox.MouseDown += keyIconBox_MouseClick;
+            this.keyIconBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.keyIconBox.Image = Properties.Inventory.no_smallkey;
+            this.keyIconBox.Location = new System.Drawing.Point(0, 0);
+            this.keyIconBox.Margin = new System.Windows.Forms.Padding(0);
+            this.keyIconBox.Name = "keyIconBox";
+            this.keyIconBox.Size = new System.Drawing.Size(48, 48);
+            this.keyIconBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.keyIconBox.TabIndex = 0;
+            this.keyIconBox.TabStop = false;
+            this.keyIconBox.MouseDown += this.keyIconBox_MouseClick;
+            this.keyIconBox.MouseEnter += this.KeyBox_MouseEnter;
+            this.keyIconBox.MouseLeave += this.KeyBox_MouseLeave;
             // 
             // counterLabel
             // 
-            counterLabel.Anchor =  System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
-            counterLabel.AutoSize = true;
-            counterLabel.BackColor = System.Drawing.Color.Black;
-            counterLabel.Font = new System.Drawing.Font("Comic Mono", 11F, System.Drawing.FontStyle.Bold);
-            counterLabel.ForeColor = System.Drawing.Color.White;
-            counterLabel.Location = new System.Drawing.Point(24, 23);
-            counterLabel.Margin = new System.Windows.Forms.Padding(3);
-            counterLabel.Name = "counterLabel";
-            counterLabel.Padding = new System.Windows.Forms.Padding(1, 6, 2, 0);
-            counterLabel.Size = new System.Drawing.Size(20, 23);
-            counterLabel.TabIndex = 1;
-            counterLabel.Text = "0";
-            counterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            counterLabel.MouseDown += keyIconBox_MouseClick;
+            this.counterLabel.Anchor =  System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            this.counterLabel.AutoSize = true;
+            this.counterLabel.BackColor = System.Drawing.Color.Black;
+            this.counterLabel.Font = new System.Drawing.Font("Comic Mono", 11F, System.Drawing.FontStyle.Bold);
+            this.counterLabel.ForeColor = System.Drawing.Color.White;
+            this.counterLabel.Location = new System.Drawing.Point(24, 23);
+            this.counterLabel.Margin = new System.Windows.Forms.Padding(3);
+            this.counterLabel.Name = "counterLabel";
+            this.counterLabel.Padding = new System.Windows.Forms.Padding(1, 6, 2, 0);
+            this.counterLabel.Size = new System.Drawing.Size(20, 23);
+            this.counterLabel.TabIndex = 1;
+            this.counterLabel.Text = "0";
+            this.counterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.counterLabel.MouseDown += this.keyIconBox_MouseClick;
+            this.counterLabel.MouseEnter += this.KeyBox_MouseEnter;
+            this.counterLabel.MouseLeave += this.KeyBox_MouseLeave;
             // 
             // KeyBox
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            Controls.Add(counterLabel);
-            Controls.Add(keyIconBox);
-            Margin = new System.Windows.Forms.Padding(0);
-            Name = "KeyBox";
-            Size = new System.Drawing.Size(48, 48);
-            Load += KeyBox_Load;
-            ((System.ComponentModel.ISupportInitialize) keyIconBox).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.counterLabel);
+            this.Controls.Add(this.keyIconBox);
+            this.Margin = new System.Windows.Forms.Padding(0);
+            this.Name = "KeyBox";
+            this.Size = new System.Drawing.Size(48, 48);
+            this.Load += this.KeyBox_Load;
+            this.KeyDown += this.KeyBox_KeyDown;
+            this.MouseEnter += this.KeyBox_MouseEnter;
+            this.MouseLeave += this.KeyBox_MouseLeave;
+            ((System.ComponentModel.ISupportInitialize) this.keyIconBox).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
