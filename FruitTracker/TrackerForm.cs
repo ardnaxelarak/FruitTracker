@@ -414,7 +414,7 @@ namespace FruitTracker {
                 if (trackEntrances) {
                     LoadLayout("Resources/locations.yml", "Resources/icons.yml");
                 }
-                doorsLabel.Image = Resources.open_door;
+                doorsLabel.Image = Resources.no_door_shuffle;
                 lightWorldMap.Refresh();
                 darkWorldMap.Refresh();
             } else {
@@ -422,7 +422,7 @@ namespace FruitTracker {
                 if (trackEntrances) {
                     LoadLayout("Resources/locations.yml", "Resources/icons_doors.yml");
                 }
-                doorsLabel.Image = Resources.locked_door;
+                doorsLabel.Image = Resources.door_shuffle;
                 lightWorldMap.Refresh();
                 darkWorldMap.Refresh();
             }
