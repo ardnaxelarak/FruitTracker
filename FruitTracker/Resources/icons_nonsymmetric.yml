@@ -31,6 +31,7 @@ entrance:
 - filename: sp
   count: 1
 - filename: sw-back
+  group: sw
   count: 1
 - filename: sw-backsouth
   group: sw

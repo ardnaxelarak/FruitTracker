@@ -14,7 +14,7 @@ entrance:
 - filename: sp
   count: 1
 - filename: sw
-  count: 1
+  count: 4
 - filename: tt
   count: 1
 - filename: ip
@@ -128,6 +128,14 @@ dropdown:
   count: 1
 - filename: well
   count: 1
+- filename: sw-bigchest
+  count: 1
+- filename: sw-hazard
+  count: 1
+- filename: sw-pinball
+  count: 1
+- filename: sw-compass
+  count: 1
 item:
 - filename: bow
 - filename: boomerang
@@ -167,7 +175,7 @@ item:
 - filename: byrna
 - filename: cape
 - filename: mirror
-- filename: chest
+- filename: major_item
 - filename: bee
 - filename: smallkey
   overlay: overlays/TH
@@ -178,8 +186,8 @@ item:
 - filename: flippers
 - filename: pearl
 - filename: heart
-- filename: heart_piece
-- filename: star
+- filename: minor_item
+- filename: fairy_big
 - filename: smallkey
   overlay: overlays/AT
 - filename: bigkey
@@ -188,7 +196,7 @@ item:
 - filename: shield
 - filename: mail
 - filename: bomb
-- filename: arrow
+- filename: heart_piece
 - filename: rupee
 - filename: triforce_piece
 - filename: map

@@ -187,6 +187,12 @@ namespace FruitTracker {
                     if (tracking.ChestSmallKeys[kvp.Key] is IEquipment keys) {
                         kvp.Value.KeyBox.Keys = keys.Value;
                     }
+                    if (this.DoorShuffle && tracking.DR_DungeonKeyCountDisplayed[kvp.Key] is IEquipment keycountDisplayed
+                            && tracking.DR_ChestKeyTotals[kvp.Key] is IEquipment keyTotal) {
+                        if (keycountDisplayed.Value != 0) {
+                            kvp.Value.KeyBox.MaxKeys = keyTotal.Value;
+                        }
+                    }
                 }
                 if (kvp.Value.DungeonItemBox != null) {
                     if (tracking.BigKey[kvp.Key] is IEquipment bigkey) {
@@ -209,8 +215,8 @@ namespace FruitTracker {
                     if (tracking.LocationsChecked[kvp.Key] is IEquipment checks) {
                         var collected = checks.Value;
 
-                        if (!this.doorShuffle) {
-                            if (!this.ShuffleBigKeys && tracking.BigKey[kvp.Key] is IEquipment bigkey) {
+                        if (!this.DoorShuffle) {
+                            if (!this.ShuffleBigKeys && tracking.BigKey[kvp.Key] is IEquipment bigkey && kvp.Key != Dungeon.HyruleCastle) {
                                 collected -= bigkey.Value;
                             }
                             if (!this.ShuffleMaps && tracking.Map[kvp.Key] is IEquipment map) {
@@ -224,9 +230,9 @@ namespace FruitTracker {
                             }
                         } else {
                             if (tracking.DR_DungeonCountDisplayed[kvp.Key] is IEquipment countDisplayed
-                                && tracking.DR_CheckTotals[kvp.Key] is IEquipment checkTotals) {
+                                    && tracking.DR_CheckTotals[kvp.Key] is IEquipment checkTotal) {
                                 if (countDisplayed.Value != 0) {
-                                    kvp.Value.ChestBox.MaxChecks = checkTotals.Value;
+                                    kvp.Value.ChestBox.MaxChecks = checkTotal.Value;
                                 }
                             }
                         }

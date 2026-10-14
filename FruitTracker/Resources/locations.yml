@@ -524,6 +524,31 @@ dark:
 - name: Mire Hint Cave
   x: 0.1993
   y: 0.1751
+- name: Skull Woods Big Chest Dropdown
+  x: 0.190
+  y: 0.884
+  type: dropdown
+- name: Skull Woods Pinball Dropdown
+  x: 0.1974
+  y: 0.8188
+  type: dropdown
+- name: Skull Woods Firebar Dropdown
+  x: 0.1463
+  y: 0.820
+  type: dropdown
+- name: Skull Woods Back Dropdown
+  x: 0.1237
+  y: 0.914
+  type: dropdown
 - name: Skull Woods Back
   x: 0.0392
   y: 0.9484
+- name: Skull Woods Back South
+  x: 0.0588
+  y: 0.875
+- name: Skull Woods Front Left
+  x: 0.1336
+  y: 0.8631
+- name: Skull Woods Front Right
+  x: 0.174
+  y: 0.8553
